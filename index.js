@@ -15,3 +15,7 @@ function nowServing() {
   katsDeliLine.shift();
   return serving;
 }
+
+function currentLine() {
+  
+}
