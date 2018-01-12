@@ -1,30 +1,30 @@
 var katzDeliLine = [];
 
 function takeANumber(katzDeliLine, newName) {
-  return ++katsDeliLine.length;
+  return ++katzDeliLine.length;
 }
 
 function nowServing() {
   var serving;
-  if (katsDeliLine.length === 0) {
+  if (katzDeliLine.length === 0) {
     serving = "There is nobody waiting to be served!";
   }
   else {
-    serving = katsDeliLine[0];
+    serving = katzDeliLine[0];
   }
-  katsDeliLine.shift();
+  katzDeliLine.shift();
   return serving;
 }
 
 function currentLine() {
   var line = "The line is currently";
-  if (katsDeliLine.length === 0) {
+  if (katzDeliLine.length === 0) {
     line = line + " empty.";
   }
   else {
     line = line + ": "
-    for (i = 0; i<katsDeliLine.length; i++) {
-      line = line + `${i+1}. ${katsDeliLine[i]},`;
+    for (i = 0; i<katzDeliLine.length; i++) {
+      line = line + `${i+1}. ${katzDeliLine[i]},`;
     }
   }
   return line;
