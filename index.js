@@ -22,8 +22,9 @@ function currentLine() {
     line = line + " empty.";
   }
   else {
-    for (i = 0; i<katsDeliLine.length; i++)
-    line = line + ``;
+    for (i = 0; i<katsDeliLine.length; i++) {
+      line = line + ``;
+    }
   }
   return line;
 }
