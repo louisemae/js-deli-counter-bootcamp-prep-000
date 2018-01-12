@@ -23,7 +23,7 @@ function currentLine() {
   }
   else {
     for (i = 0; i<katsDeliLine.length; i++) {
-      line = line + ``;
+      line = line + `${i+1}. ${katsDeliLine[i]},`;
     }
   }
   return line;
