@@ -22,6 +22,7 @@ function currentLine() {
     line = line + " empty.";
   }
   else {
+    line = line + ": "
     for (i = 0; i<katsDeliLine.length; i++) {
       line = line + `${i+1}. ${katsDeliLine[i]},`;
     }
