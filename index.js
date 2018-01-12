@@ -5,5 +5,13 @@ function takeANumber(katzDeliLine, newName) {
 }
 
 function nowServing() {
-  return katsDeliLine[0];
+  var serving;
+  if (katsDeliLine.length === 0) {
+    serving = "There is nobody waiting to be served!";
+  }
+  else {
+    serving = katsDeliLine[0];
+  }
+  katsDeliLine.shift();
+  return serving;
 }
