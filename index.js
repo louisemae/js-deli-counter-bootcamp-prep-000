@@ -25,7 +25,7 @@ function currentLine(katzDeliLine) {
   }
   else {
     line = line + ": "
-    for (i = 0; i<katzDeliLine.length; i++) {
+    for (var i = 0; i<katzDeliLine.length; i++) {
       line = line + `${i+1}. ${katzDeliLine[i]},`;
     }
   }
