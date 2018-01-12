@@ -17,5 +17,13 @@ function nowServing() {
 }
 
 function currentLine() {
-  
+  var line = "The line is currently";
+  if (katsDeliLine.length === 0) {
+    line = line + " empty.";
+  }
+  else {
+    for (i = 0; i<katsDeliLine.length; i++)
+    line = line + ``;
+  }
+  return line;
 }
